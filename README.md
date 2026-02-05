@@ -5,7 +5,6 @@
 [![Framework](https://img.shields.io/badge/Framework-PyTorch-red)](https://pytorch.org/)
 
 **Authors:** Simone Melcarne and Jean-Luc Dugelay
-**Eurecom Research Center, Sophia Antipolis, France**
 ---
 
 <p align="center">
