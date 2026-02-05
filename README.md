@@ -4,8 +4,9 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Framework](https://img.shields.io/badge/Framework-PyTorch-red)](https://pytorch.org/)
 
-**Authors:** S. Melcarne and J.L. Dugelay
-**Eurecom Research Center, Sophia Antipolis, France**
+**Authors:** S. Melcarne¹, J.L. Dugelay¹
+
+¹ *Eurecom Research Center, Sophia Antipolis, France*
 ---
 
 <p align="center">
