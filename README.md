@@ -46,11 +46,11 @@ To reproduce our results, you need to set up the dataset following the structure
 
 ### 1. Download Data
 1.  **KAIST-MS Dataset (Thermal & RGB):**
-    Download the official dataset from the [KAIST Project Page](https://sites.google.com/site/pedestriandataset/).
+    Download the official dataset from the [KAIST Project Page]([https://sites.google.com/site/pedestriandataset/](https://github.com/SoonminHwang/rgbt-ped-detection)).
     * You need the `lwir` (Thermal) and `visible` (RGB) folders for the day sets (`set01`, `set02`, `set06`, `set07`, `set08`).
 2.  **Event Data (Voxel Grids):**
     Since we use simulated events aligned with KAIST frames, you must download our pre-processed voxel grids (`.npy` files).
-    * 📥 **[DOWNLOAD LINK HERE]** (e.g., Google Drive / Zenodo / OneDrive)
+    * 📥 **[DOWNLOAD LINK HERE]**
     * *Note: These events were generated using the [V2E Simulator](https://github.com/SensorsINI/v2e). Settings are reported in the paper.*
 
 ### 2. Folder Structure
