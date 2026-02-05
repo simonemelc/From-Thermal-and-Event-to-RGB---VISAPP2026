@@ -10,8 +10,7 @@
   <img src="figures/visual_comparison.PNG" alt="Visual Comparison" width="100%">
 </p>
 
-**Authors:** Simone Melcarne and Jean-Luc Dugelay
-Eurecom Research Center, Digital Security Department, Biot, France
+**Authors:** Simone Melcarne and Jean-Luc Dugelay || Eurecom Research Center, Digital Security Department, Biot, France
 
 ## Publication
 
