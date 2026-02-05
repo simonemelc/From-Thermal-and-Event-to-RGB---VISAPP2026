@@ -4,7 +4,10 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Framework](https://img.shields.io/badge/Framework-PyTorch-red)](https://pytorch.org/)
 
-**Authors:** Simone Melcarne and Jean-Luc Dugelay
+##Authors
+
+Simone Melcarne and Jean-Luc Dugelay
+Eurecom Research Center, Digital Security Department, Biot, France
 ---
 
 <p align="center">
@@ -102,6 +105,13 @@ conda activate thermal-event-fusion
 pip install -r requirements.txt
 ```
 
+4. **Download pre-trained model**
+    Download from [https://github.com/SoonminHwang/rgbt-ped-detection](https://github.com/SoonminHwang/rgbt-ped-detection) ancd place it in:
+
+```bash
+└── checkpoints/
+    └── best_model.pth
+```
 ---
 
 ## Usage
