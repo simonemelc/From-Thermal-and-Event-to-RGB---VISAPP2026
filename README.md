@@ -39,10 +39,43 @@ Our method leverages the complementary nature of two modalities to reconstruct a
 * **Color Space:** The network predicts in the **Lab color space** to better separate luminance and chrominance.
 * **Loss Function:** We train end-to-end using a combination of Spatial L1 ($L_{s-l_1}$), Multi-Scale SSIM ($L_{MS-SSIM}$), and Color L1 ($L_{ab-l_1}$) losses.
 
-## Dataset
-We evaluated our approach on the **KAIST-MS dataset** (Daylight set).
-* **Thermal & RGB:** Real-world recordings from KAIST-MS.
-* **Events:** Synthetically generated from RGB frames using the **V2E simulator** to ensure perfect pixel-alignment.
+
+## Dataset Preparation
+
+To reproduce our results, you need to set up the dataset following the structure below. Our framework relies on the **KAIST Multispectral Benchmark** (for Thermal/RGB) and pre-processed **Event Voxel Grids** (simulated via V2E).
+
+### 1. Download Data
+1.  **KAIST-MS Dataset (Thermal & RGB):**
+    Download the official dataset from the [KAIST Project Page](https://sites.google.com/site/pedestriandataset/).
+    * You need the `lwir` (Thermal) and `visible` (RGB) folders for the day sets (`set01`, `set02`, `set06`, `set07`, `set08`).
+2.  **Event Data (Voxel Grids):**
+    Since we use simulated events aligned with KAIST frames, you must download our pre-processed voxel grids (`.npy` files).
+    * 📥 **[DOWNLOAD LINK HERE]** (e.g., Google Drive / Zenodo / OneDrive)
+    * *Note: These events were generated using the [V2E Simulator](https://github.com/SensorsINI/v2e). Settings are reported in the paper.*
+
+### 2. Folder Structure
+Organize your data directory (e.g., `./data`) to match the hierarchy expected by the dataloader. The structure must preserve the `setXX/VideoXX` organization.
+
+```text
+/path/to/your/data/
+│
+├── kaist-rgbt/                # Original KAIST Dataset
+│   ├── set01/
+│   │   ├── V000/
+│   │   │   ├── lwir/          # Contains I00000.jpg, etc.
+│   │   │   └── visible/       # Contains I00000.jpg, etc.
+│   │   └── ...
+│   ├── set02/
+│   └── ...
+│
+└── voxel_grid_soft_rgb/       # Our Pre-processed Event Data
+    ├── set01/
+    │   ├── V000/
+    │   │   ├── set01_V000_00000.npy
+    │   │   └── ...
+    │   └── ...
+    ├── set02/
+    └── ...
 
 ## Usage
 
