@@ -85,7 +85,7 @@ To reproduce our results, set up the dataset following the structure below. The 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/simonemelc/From-Thermal-and-Event-to-RGB---VISAPP2026.git
+git clone https://github.com/simonemelc/THEVNet.git
 cd From-Thermal-and-Event-to-RGB---VISAPP2026
 ```
 
